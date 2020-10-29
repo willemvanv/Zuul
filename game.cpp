@@ -29,7 +29,7 @@ int main() {
 		      "NORTH");
   rooms[3] = new room(3, "The trail leads you to large woods, how nice", "Branch",
 		      "NORTH, WEST, SOUTH");	  
-  rooms[4] = new room(4, "A calm shrine emerges from the woods", "Key",
+  rooms[4] = new room(4, "A calm shrine emerges from the woods", "key",
 		      "NORTH");
   rooms[5] = new room(5, "Ruins of a small village surround you", " ",
 		      "NORTH, SOUTH, EAST");
@@ -61,11 +61,11 @@ int main() {
     char input[99];
     rooms[cr]->printTurn();
     //Win condition
-    if (cr == 14 && (strcmp(inventory0, "Key") == 0 || strcmp(inventory1, "Key") == 0 ||
-		     strcmp(inventory2, "Key") == 0 || strcmp(inventory3, "Key") == 0 ||
-		     strcmp(inventory4, "Key") == 0 || strcmp(inventory5, "Key") == 0 ||
-		     strcmp(inventory6, "Key") == 0)) {
-      cout << "Use Key?(y/n)" << endl;
+    if (cr == 14 && (strcmp(inventory0, "key") == 0 || strcmp(inventory1, "key") == 0 ||
+		     strcmp(inventory2, "key") == 0 || strcmp(inventory3, "key") == 0 ||
+		     strcmp(inventory4, "key") == 0 || strcmp(inventory5, "key") == 0 ||
+		     strcmp(inventory6, "key") == 0)) {
+      cout << "Use key?(y/n)" << endl;
       char inp;
       cin >> inp;
       if (inp = 'y') {
